@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de acceso</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <form action="#" id="form" class="formulario">
+            <fieldset>
+                <legend>Create Account</legend>
+
+               
+                    <div class="campo">
+                        <label for="">Nombre</label>                       
+                        <input class="inputInterno" id="name" type="text">
+                        <span class="datos" id="resultadonombre"></span>
+                    </div>
+                   
+
+                    <div class="campo">
+                        <label for="">Email</label>
+                        <input 
+                            id="userEmail" 
+                            class="inputInterno" type="email">
+                        <span class="datos" id="resultadoemail"></span>
+                    </div>
+                    
+
+                    <div class="campo">
+                        <label for="">Clave</label>
+                        <input class="inputInterno" id="passw1" type="password">
+                        <span class="datos" id="password_feedback"></span>
+                    </div>
+                    
+
+                    <div class="campo">
+                        <label for="">Confirme su clave</label>
+                        <input class="inputInterno" id="passw2" type="password">
+                    <span class="datos" id="confirm_password_feedback"></span>    
+                    </div>
+                    
+
+                <div>
+                    <input class="boton" type="submit" value="Enviar" onclick="validar()">
+                </div>   
+                
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

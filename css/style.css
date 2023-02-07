@@ -1,0 +1,113 @@
+:root{
+    --blanco: #ffffff;
+    --fondo: #242933;
+    --azulOscuro: #2f3645;
+    --letras: #7b83a3;
+    --lLegend: #a7b5db;
+    --borde: #343c4d;
+    --envio: #6d67f4;
+    --rojo: #FF0000;
+    --verde: #70e000;
+
+    
+}
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    font-size: 16px;
+    background-color: var(--fondo);
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.formulario{
+ background-color: var(--azulOscuro);
+ width: min(30rem, 100%);
+ margin: 0 auto;
+ padding: 2rem;
+ border: 0.2rem solid var(--borde);
+ border-radius: 0.5rem;
+
+}
+
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: left;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 2rem 0 2rem 0;
+    color: var(--lLegend);
+}
+
+
+.campo{
+    margin-bottom: 2rem;
+
+}
+
+.campo label{
+    color: var(--letras);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.inputInterno{
+    width: 100%;
+    border: none;
+    padding: 1rem 0rem; /* vertical, horizontal*/
+    border-radius: .3rem;
+    text-indent: 1rem;
+}
+input.invalid {
+    border: 2px solid var(--rojo);
+    font-size: 1.2rem;
+    background-image: url(../images/error-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+
+input.valid {
+    border: 2px solid var(--verde);
+    font-size: 1.2rem;
+    background-image: url(../images/success-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+.boton{
+    background-color: var(--envio);
+    color:var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.1rem;
+    width: 100%;
+    text-align: center;
+    border: 0.3rem solid var(--negro);
+    text-indent: 1rem;
+}
+
+span{
+    color: var(--rojo);
+    display: none;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
